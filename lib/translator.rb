@@ -14,8 +14,8 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   nds = load_library(file_path)
   nds.each do |key, hash|
-    if emoticon == nds[:english]
-      return nds[:japanese]
+    if emoticon == hash[:english]
+      return hash[:japanese]
  end
 end
 
