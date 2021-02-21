@@ -31,6 +31,6 @@ def get_english_meaning(file_path, emoticon)
 end 
 
 #sorry_message = "Sorry, that emoticon was not found"
-  returns the Japanese equivalent of an English grinning (FAILED - 1) 
+  #returns the Japanese equivalent of an English grinning (FAILED - 1)
  
  
