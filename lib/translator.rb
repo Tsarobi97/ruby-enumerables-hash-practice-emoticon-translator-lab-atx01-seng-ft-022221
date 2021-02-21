@@ -21,7 +21,8 @@ def get_japanese_emoticon(file_path, emoticon)
  end
  unless nds.include?(emoticon)
  return sorry_message
-end
+ end
+end 
 
 def get_english_meaning(file_path, emoticon)
   sorry_message = "Sorry, that emoticon was not found"
