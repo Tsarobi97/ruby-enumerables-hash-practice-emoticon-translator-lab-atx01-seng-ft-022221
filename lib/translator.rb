@@ -12,12 +12,15 @@ end
  
 
 def get_japanese_emoticon(file_path, emoticon)
+    sorry_message = "Sorry, that emoticon was not found"
   nds = load_library(file_path)
   nds.each do |key, hash|
     if emoticon == hash[:english]
       return hash[:japanese]
   end
  end
+ unless nds.include?(emoticon)
+ return sorry_message
 end
 
 def get_english_meaning(file_path, emoticon)
