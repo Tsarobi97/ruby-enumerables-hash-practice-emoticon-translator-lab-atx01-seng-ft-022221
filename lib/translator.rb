@@ -13,8 +13,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   nds = load_library(file_path)
-  nds.each do |x,y|
-    x.each do |a|
+  nds.each do |key, hash|
   binding.pry
   end 
  end
