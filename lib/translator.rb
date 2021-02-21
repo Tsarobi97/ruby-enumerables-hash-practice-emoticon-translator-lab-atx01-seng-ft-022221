@@ -16,6 +16,7 @@ def get_japanese_emoticon(file_path, emoticon)
   nds.each do |key, hash|
     if emoticon == hash[:english]
       return hash[:japanese]
+  end
  end
 end
 
